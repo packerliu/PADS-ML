@@ -40,8 +40,13 @@ OCAMLOPT=ocamlopt.opt
 endif
 
 OCAMLDEP=ocamldep
+ifdef CAMLP5_LIB_DIR
+INCLUDES=-I $(CAMLP5_LIB_DIR)
+DEPINCLUDES=-I $(CAMLP5_LIB_DIR)
+else
 INCLUDES=-I +camlp5
 DEPINCLUDES=-I +camlp5
+endif
 # Set the PREPROC variable to use a preprocessor
 OCAMLFLAGS=$(INCLUDES) $(PREPROC)
 OCAMLOPTFLAGS=$(INCLUDES) $(PREPROC) -inline 10 -ccopt -O3 -noassert
