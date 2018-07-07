@@ -25,6 +25,8 @@ architectures:
               Setup
 =========================================
 
+packerliu: A Dockerfile is available to use opam for many of the packages below, except PADSC_runtime and PADS/ML. 
+
 N.B.: these instructions use GNU make (often called gmake or make).
 Be sure that the make program you are using is GNU make before
 proceeding.  
