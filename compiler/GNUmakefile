@@ -56,7 +56,7 @@ CAMLP5_DBG=camlp5 pa_o.cmo pa_op.cmo pa_extend.cmo q_MLast.cmo pr_o.cmo pr_op.cm
 CAMLP5_CORE_LIB_NAMES= camlp5.cmxa pa_o.cmx 
 CAMLP5_LIB_NAMES = $(CAMLP5_CORE_LIB_NAMES) pr_o.cmx
 CAMLP5_DUMP_LIB_NAMES = $(CAMLP5_CORE_LIB_NAMES) pr_dump.cmx
-CAMLP5_PATH = $(OCAML_LIB_DIR)/camlp5
+CAMLP5_PATH = $(OCAML_LIB_DIR)/../camlp5
 CAMLP5_LIBS_OPT = $(foreach lib,$(CAMLP5_LIB_NAMES),$(CAMLP5_PATH)/$(lib))
 CAMLP5_DUMP_LIBS_OPT = $(foreach lib,$(CAMLP5_DUMP_LIB_NAMES),$(CAMLP5_PATH)/$(lib))
 
